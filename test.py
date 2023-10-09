@@ -1,6 +1,7 @@
 import cohere
 from cohere.responses.classify import Example
 import os
+key = os.environ.get("KEY")
 key = os.environ.get('KEY')
 if key is None:
     raise ValueError("The COHERE_API_KEY environment variable is not set.")
